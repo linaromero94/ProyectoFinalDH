@@ -34,6 +34,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: "Kaushan Script", cursive
 }
 
 button {
@@ -85,7 +86,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   height: 100%;
   padding: 0 20px;
@@ -105,12 +106,13 @@ header {
 .header-right button {
   margin-left: 10px;
 }
+
 .logotipo{
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 100%;
   margin-top: 50px;
-
+  margin-left: 40px;
 }
 
