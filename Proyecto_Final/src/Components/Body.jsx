@@ -6,6 +6,7 @@ const categoriasList = [
   { label: "Cocteles" },
   { label: "Bodas" },
   { label: "Empresarial" },
+  { label: "Cumpleaños" },
 ];
 
 const Body = () => {
