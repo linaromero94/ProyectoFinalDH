@@ -24,7 +24,7 @@ const Body = () => {
               <TextField {...params} label="Categorías" />
             )}
           />
-          <button type="submit">Buscar</button>
+          <button className="buscador-cat" type="submit">Buscar</button>
         </form>
       </div>
       <div>
