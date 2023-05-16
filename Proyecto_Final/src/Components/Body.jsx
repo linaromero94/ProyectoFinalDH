@@ -1,40 +1,32 @@
 import React from "react";
-import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
 
-const categoriasList = [
-  { label: "Cocteles" },
-  { label: "Bodas" },
-  { label: "Empresarial" },
-  { label: "Cumpleaños" },
-];
 
 const Body = () => {
-  return (
-    <div className="contenido-body">
-      <div className="estiloBuscador">
-        <form className="claseformBuscador">
-          <input type="text" placeholder="Buscar..." />
-          <Autocomplete
-            disablePortal
-            id="combo-box-demo"
-            options={categoriasList}
-            className="combo-box-demo"
-            renderInput={(params) => (
-              <TextField {...params} label="Categorías" />
-            )}
-          />
-          <button type="submit">Buscar</button>
-        </form>
-      </div>
-      <div>
-        <h1>categorias</h1>
-      </div>
-      <div>
-        <h1>recomendaciones</h1>
-      </div>
-    </div>
-  );
-};
+    return(
+        <body>
+          <div className="estiloCategorias">
+            <h1>Título del cuerpo</h1>
+            <p>Este es un párrafo en el cuerpo.</p>
 
-export default Body;
+            <form>
+                <input type="text" placeholder="Buscar..."/>
+                <button type="submit">Buscar</button>
+            </form>
+
+
+            <form>
+                <input type="text" placeholder="Buscar..."/>
+                <button type="submit">Buscar</button>
+            </form>
+            <ul className="menu">
+                <li className="itemMenu">Categoría 1</li>
+                <li className="itemMenu">Categoría 2</li>
+                <li className="itemMenu">Categoría 3</li>
+            </ul>
+          </div>
+        </body>
+
+    )
+}
+
+export default Body
