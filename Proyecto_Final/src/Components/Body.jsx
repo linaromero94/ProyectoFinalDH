@@ -1,12 +1,13 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
+import Categorias from "./Categorias";
 
 const categoriasList = [
-  { label: "Cocteles" },
-  { label: "Bodas" },
-  { label: "Empresarial" },
-  { label: "Cumpleaños" },
+  { label: "Cocteles", idCategoria: 1, img: "/src/assets/cocteles.jpg" },
+  { label: "Bodas", idCategoria: 2, img: "/src/assets/bodas.jpg" },
+  { label: "Empresarial", idCategoria: 3, img: "/src/assets/empresarial.jpg" },
+  { label: "Cumpleaños", idCategoria: 4, img: "/src/assets/cumpleanios.jpg" },
 ];
 
 const Body = () => {
@@ -24,15 +25,23 @@ const Body = () => {
               <TextField {...params} label="Categorías" />
             )}
           />
-          <button className="buscador-cat" type="submit">Buscar</button>
+          <button className="buscador-cat" type="submit">
+            Buscar
+          </button>
         </form>
       </div>
-      <div>
-        <h1>categorias</h1>
-      </div>
-      <div>
-        <h1>recomendaciones</h1>
-      </div>
+      <br></br>
+      <h1
+        style={{
+          fontFamily: "serif",
+          fontSize: "25px",
+          marginLeft: "5%",
+        }}
+      >
+        Busca por categorías
+      </h1>
+      <br></br>
+      <Categorias categoriasList={categoriasList} />
     </div>
   );
 };
