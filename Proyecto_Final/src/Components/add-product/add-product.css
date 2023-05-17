@@ -1,0 +1,29 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+    }
+
+    .container h2{
+        margin: 0 0 10px;
+        text-align: center;
+        color: #8a6b0e ;
+    }
+
+    .container .container-form input{
+        margin-bottom: 10px;
+    } 
+    .container .container-form label{
+        display:block;
+            }
+  .container .container-form {
+    width: 100%;
+            }     
+   .container .container-form button{
+    background-color: #8a6b0e;
+    color: #fff;
+   }
+    .error{
+        color: red;
+    }
