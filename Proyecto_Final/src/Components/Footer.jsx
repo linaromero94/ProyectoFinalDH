@@ -1,39 +1,39 @@
 import React from 'react'
 
 import facebookIcon from "../assets/facebook.png"
-import gitLabIcon from "../assets/gitlab.png"
+import googleIcon from "../assets/google.png"
 import twitterIcon from "../assets/twitter.png"
 import linkedinIcon from "../assets/linkedin.png"
 
 const Footer = () => {
     return(
         
-    <footer class="footers">
+        <footer className="footer">
         
-
-        <ul className="icono-social">
-        <li className="itemIconoSocial"><a href="#" className="linkIconosocial"><img src={facebookIcon} alt="" className='logo'/></a></li>
-            <li className="itemIconoSocial"><a href="#" className="linkIconosocial"><img src={linkedinIcon} alt="" className='logo'/></a></li>
-            <li className="itemIconoSocial"><a href="#" className="linkIconosocial"><img src={twitterIcon} alt="" className='logo'/></a></li>
-            <li className="itemIconoSocial"><a href="#" className="linkIconosocial"><img src={gitLabIcon} alt="" className='logo'/></a></li> 
-            
+        <ul className="social-icon">
+          <li className="social-icon__item"><a className="social-icon__link" href="#">
+            <img className='logo' src={facebookIcon} alt="" />
+            </a></li>
+          <li className="social-icon__item"><a className="social-icon__link" href="#">
+            <img className='logo' src={twitterIcon} alt="" />
+            </a></li>
+          <li className="social-icon__item"><a className="social-icon__link" href="#">
+            <img className='logo' src={linkedinIcon} alt="" />
+            </a></li>
+          <li className="social-icon__item"><a className="social-icon__link" href="#">
+            <img className='logo' src={googleIcon} alt="" />
+            </a></li>
         </ul>
-
         <ul className="menu">
-        <li className="itemMenu"><a href="#" className="linkmenu">Inicio</a></li>
-            <li className="itemMenu"><a href="#" className="linkmenu">Acerca de</a></li>
-            <li className="itemMenu"><a href="#" className="linkmenu">Servicios</a></li>
-            <li className="itemMenu"><a href="#" className="linkmenu">Grupo</a></li>
-            <li className="itemMenu"><a href="#" className="linkmenu">Contacto</a></li>
+          <li className="menu__item"><a className="menu__link" href="#">INICIO</a></li>
+          <li className="menu__item"><a className="menu__link" href="#">ACERCA DE</a></li>
+          <li className="menu__item"><a className="menu__link" href="#">SERVICES</a></li>
+          <li className="menu__item"><a className="menu__link" href="#">EQUIPO</a></li>
+          <li className="menu__item"><a className="menu__link" href="#">CONTACTO</a></li>
+    
         </ul>
-        <p>©2023 Digital House Equipo 11 C1 | Derechos reservados.</p>
-
-       
-        
-
-        
-
-    </footer>
+        <p>&copy;2023 Digital House Equipo 11 | Todos los derechos reservados</p>
+      </footer>
     )
 }
 export default Footer;

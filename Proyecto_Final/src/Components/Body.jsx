@@ -15,7 +15,7 @@ const Body = () => {
     <div className="contenido-body">
       <div className="estiloBuscador">
         <form className="claseformBuscador">
-          <input type="text" placeholder="Buscar..." />
+          <input  type="text" placeholder="Buscar..." />
           <Autocomplete
             disablePortal
             id="combo-box-demo"
@@ -25,7 +25,7 @@ const Body = () => {
               <TextField {...params} label="Categorías" />
             )}
           />
-          <button className="buscador-cat" type="submit">
+          <button className="btn-donate" type="submit">
             Buscar
           </button>
         </form>
@@ -43,6 +43,7 @@ const Body = () => {
       <br></br>
       <Categorias categoriasList={categoriasList} />
     </div>
+    
   );
 };
 
