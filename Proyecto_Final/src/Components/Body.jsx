@@ -2,6 +2,7 @@ import React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import Categorias from "./Categorias";
+import Recomendaciones from "./Recomendaciones";
 
 const categoriasList = [
   { label: "Cocteles", idCategoria: 1, img: "/src/assets/cocteles.jpg" },
@@ -12,6 +13,7 @@ const categoriasList = [
 
 const Body = () => {
   return (
+
     <div className="contenido-body">
       <div className="estiloBuscador">
         <form className="claseformBuscador">
@@ -42,6 +44,8 @@ const Body = () => {
       </h1>
       <br></br>
       <Categorias categoriasList={categoriasList} />
+      <h1>Recomendado</h1>
+      <Recomendaciones/>
     </div>
   );
 };
