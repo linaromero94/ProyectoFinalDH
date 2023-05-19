@@ -10,13 +10,11 @@ const Children = () => {
 export const Registro = () => {
     return (
         <div className="registro">
-
-        
-            <h1> Bienvenidos</h1>
+           <div className='bienvenida'>
+           <h1> Bienvenidos</h1>
             <p>Para empezar debes registrarte </p>
-
-            <Children />{UserForm}
-
+           </div>
+           <div className=' formulario'> <Children />{UserForm}</div>
         </div>
     )
 }

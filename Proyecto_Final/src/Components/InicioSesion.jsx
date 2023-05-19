@@ -31,7 +31,7 @@ const InicioSesion = () => {
   };
 
   return (
-    <div>
+    <div className='inicio'>
       <h2>Iniciar sesión</h2>
       <form onSubmit={handleSubmit}>
         <div>

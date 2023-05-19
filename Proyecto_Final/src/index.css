@@ -123,3 +123,29 @@ header {
   filter: drop-shadow(0 0 3em #e5d9b6)
 }
 
+.registro {
+  background-color: #535bf2;
+  width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: center;
+align-content: center;
+text-align: center;
+flex-direction: column;
+
+ 
+}
+
+.bienvenida{
+  justify-self: center;
+  align-self: center;
+}
+.formulario{
+  justify-self: center;
+  align-self: center;
+}
+
+
+
+
