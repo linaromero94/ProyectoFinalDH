@@ -1,21 +1,27 @@
-import React from "react";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./App.css";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
 import Footer from "./Components/Footer";
-import AgregarProducto from "./Components/add-product/add-product";
+import Registro from "./Components/Registro";
+import InicioSesion from "./Components/InicioSesion";
 
 function App() {
   return (
-    <>
-      <div>
+    <div>
+      <BrowserRouter>
         <Header />
-        <Body />
-        <AgregarProducto/>
+        <Routes>
+          <Route path="/" element={<Body />} />
+          <Route path="/registro" element={<Registro />} />
+          <Route path="/inicio" element={<InicioSesion />} />
+        </Routes>
         <Footer />
-      </div>
-    </>
+      </BrowserRouter>
+    </div>
   );
 }
 
 export default App;
+
