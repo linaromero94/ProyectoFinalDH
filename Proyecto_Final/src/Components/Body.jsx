@@ -33,13 +33,7 @@ const Body = () => {
         </form>
       </div>
       <br></br>
-      <h1
-        style={{
-          fontFamily: "serif",
-          fontSize: "25px",
-          marginLeft: "5%",
-        }}
-      >
+      <h1>
         Busca por categorías
       </h1>
       <br></br>

@@ -36,14 +36,14 @@ const InicioSesion = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Nombre de usuario:</label>
-          <input type="text" value={username} onChange={handleUsernameChange} />
+          <input type="text" placeholder="Escribe tu usuario" value={username} onChange={handleUsernameChange} />
         </div>
         <div>
           <label>Contraseña:</label>
-          <input type="password" value={password} onChange={handlePasswordChange} />
+          <input type="password" placeholder="Escribe tu contraseña" value={password} onChange={handlePasswordChange} />
         </div>
         {error && <p>{error}</p>}
-        <button type="submit">Iniciar sesión</button>
+        <button type="submit" className='btnForm'>Iniciar sesión</button>
       </form>
     </div>
   );

@@ -6,14 +6,14 @@ const Header = () => {
   return (
     <header>
       <a href='#' className='logoPrincipal'>
-        <img src={img} alt="" />
+        <Link to="/"><img src={img} alt="" /></Link>
       </a>
       <a href="#">
-        <h2>Celebra la vida, celebra con nosotros...</h2>
+        <Link to="/"><h2>Celebra la vida, celebra con nosotros...</h2></Link>
       </a>
       <div className='contenedorBtn'>
-      <button className='btn-donate'>Crear cuenta</button>
-      <button className='btn-donate'>Iniciar sesión</button>
+      <Link to="/registro"><button className='btn-donate'>Crear cuenta</button></Link>
+      <Link to="/inicio"><button className='btn-donate'>Iniciar sesión</button></Link>
       </div>
     </header>
   );

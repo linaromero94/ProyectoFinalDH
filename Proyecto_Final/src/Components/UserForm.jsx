@@ -24,32 +24,32 @@ const UserForm = () => {
   };
 
   return (
-    <div>
+    <div className='contenedorFormulario'>
       <h2>Crear cuenta</h2>
       <form onSubmit={handleFormSubmit}>
         <div>
           <label>Nombre:</label>
-          <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
+          <input type="text" placeholder="Escribe tu nombre" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
         </div>
         <div>
           <label>Apellido:</label>
-          <input type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
+          <input type="text" placeholder="Escribe tu apellido" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
         </div>
         <div>
           <label>Email:</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <input type="email" placeholder="Escribe tu email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
         <div>
           <label>Teléfono:</label>
-          <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+          <input type="tel" placeholder="Escribe tu numero de telefono" value={phone} onChange={(e) => setPhone(e.target.value)} required />
         </div>
         <div>
           <label>Nombre de usuario:</label>
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} required />
+          <input type="text" placeholder="Escribe un nombre de usuario" value={username} onChange={(e) => setUsername(e.target.value)} required />
         </div>
         <div>
           <label>Contraseña:</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <input type="password" placeholder="Escribe una contraseña" value={password} onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <div>
           <label>Tipo de usuario:</label>
@@ -58,7 +58,7 @@ const UserForm = () => {
             <option value="admin">Administrador</option>
           </select>
         </div>
-        <button type="submit">Enviar</button>
+        <button type="submit" className='btnForm'>Enviar</button>
       </form>
     </div>
   );
